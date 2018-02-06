@@ -6,7 +6,7 @@ function MostrarAumento()
 {
 	var sueldo;
  var sueldoConAumento;
- sueldo=document.getElementById('sueldo').value;
+ sueldo=document.getElementById('importe').value;
  sueldo=parseInt(sueldo);
  sueldoConAumento=sueldo*0.75;
  sueldoConAumento=parseInt(sueldoConAumento);
