@@ -27,6 +27,8 @@ function Mostrar()
 			case 2:
 				contador2++;
 			case 3:
+					
+
 				contador3++;
 				contador3++;
 				contador++;
