@@ -120,9 +120,9 @@ function Mostrar()
 					{
 						maximo=edad;
 					}
-					if(edad<minimo);
+					if(edad<minimo)
 					{
-						sexoDelMenorEdad=minimo;
+						sexoDelMenorEdad=sexo;
 						minimo=edad;
 					}
 					
