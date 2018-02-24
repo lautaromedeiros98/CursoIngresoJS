@@ -32,6 +32,8 @@ function Mostrar()
 	var promedioMujeres;
 	var sumaDeNotasMujeres=0
 	var notasDeMujeres=0;
+	var acumuladorMujeres=0
+	var sexoDelMenorEdad;
 
 
 		
@@ -101,15 +103,35 @@ function Mostrar()
 			notaMaxima=maximo;
 
 				if(sexo=="f")
+				{					
+					acumuladorMujeres=acumuladorMujeres+nota;
+					promedioMujeres=acumuladorMujeres/contadorMujeres;
+				}
+
+				if( contador ==1)
 				{
-					
-					acumulador=acumulador+notasDeMujeres;
-					promedioMujeres=notasDeMujeres/contadorMujeres;
+					maximo=edad;
+					minimo=edad;
+					sexoDelMenorEdad=sexo;
+				}
+				else
+				{
+					if(edad>maximo)
+					{
+						maximo=edad;
+					}
+					if(edad<minimo);
+					{
+						sexoDelMenorEdad=minimo;
+						minimo=edad;
+					}
 					
 				}
 
 
+
+
 		}
 	promedio=acumulador/contador;
-	document.write( " fueron " + contador + " alumnos ingresados , y el promedio de sus notas de examen es " + promedio + ". La cantidad de varones es " + contadorVarones + " Y la cantidad de mujeres es " + contadorMujeres + " La cantidad de varones desaprobados son " + contadorVaronesDesaprobados +" La nota maxima fue de " + nombreMaximo + " El promedio de las mujeres es " + promedioMujeres);
+	document.write( " fueron " + contador + " alumnos ingresados , y el promedio de sus notas de examen es " + promedio + ". La cantidad de varones es " + contadorVarones + " Y la cantidad de mujeres es " + contadorMujeres + " La cantidad de varones desaprobados son " + contadorVaronesDesaprobados +" La nota maxima fue de " + nombreMaximo + " El promedio de las mujeres es " + promedioMujeres + " El sexo de menor edad es " + sexoDelMenorEdad);
 }
