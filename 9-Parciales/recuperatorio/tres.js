@@ -1,28 +1,17 @@
 function Mostrar()
 {
-	var precio1;
-	var precio2;
-	var precio3;
-	var resultado;
-	var resultadoDos
+	var precioUno=document.getElementById('precioUno').value;
+	var precioDos=document.getElementById('precioDos').value;
+	var precioTres=document.getElementById('precioTres').value;
+	var promedio;
+	var suma;
+	precioUno=parseInt(precioUno);
+	precioDos=parseInt(precioDos);
+	precioTres=parseInt(precioTres);
+	suma=precioUno+precioDos+precioTres;
+	promedio=suma/3;
 
-
-	precio1=document.getElementById('precioUno').value;
-	precio2=document.getElementById('precioDos').value;
-	precio3=document.getElementById('precioTres').value;
-
-    precio1=parseInt(precio1);
-    precio2=parseInt(precio2);
-    precio3=parseInt(precio3);
-
-    resultado=precio1+precio2+precio3;
-    resultadoDos=precio1+precio1+precio3/3;
-
-    alert(resultado);
-    alert(resultadoDos);
-
-
-
-
+	alert("La suma de la compra es " + suma);
+	alert("El promedio de la compra es "+promedio );
 
 }
